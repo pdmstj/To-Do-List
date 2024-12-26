@@ -1,0 +1,171 @@
+body {
+  background: #34495e;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.main-section {
+  background: transparent;
+  max-width: 500px;
+  width: 90%;
+  height: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+}
+
+.add-section {
+  width: 100%;
+  background: #fff;
+  margin: 0px auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.add-section input {
+  display: block;
+  width: 95%;
+  height: 40px;
+  margin: 10px auto;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 0px 5px;
+}
+
+.add-section button {
+  display: flex; /* 플렉스박스로 변경하여 내부 요소 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  width: 95%;
+  height: 40px;
+  margin: 0px auto;
+  border: none;
+  outline: none;
+  background: #0088FF;
+  color: #fff;
+  font-family: sans-serif;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  gap: 10px; /* 텍스트와 아이콘 사이의 간격 */
+}
+
+.add-section button:hover {
+  box-shadow: 0 2px 2px 0 #ccc, 0 2px 3px 0 #ccc;
+  opacity: 0.7;
+}
+
+.add-section button span {
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  line-height: 18px; /* 수직 가운데 정렬 */
+  text-align: center; /* 텍스트 가운데 정렬 */
+}
+
+#errorMes {
+  display: block;
+  background: #f2dede;
+  width: 95%;
+  margin: 0px auto;
+  color: rgb(139, 19, 19);
+  padding: 10px;
+  height: 35px;
+}
+
+.show-todo-section {
+  width: 100%;
+  background: #fff;
+  margin: 30px auto;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.todo-item {
+  width: 95%;
+  margin: 10px auto;
+  padding: 20px 10px;
+  box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+  border-radius: 5px;
+}
+
+.todo-item h2 {
+  display: inline-block;
+  padding: 5px 0px;
+  font-size: 17px;
+  font-family: sans-serif;
+  color: #555;
+}
+
+.todo-item small {
+  display: block;
+  width: 100%;
+  padding: 5px 0px;
+  color: #888;
+  padding-left: 30px;
+  font-size: 14px;
+  font-family: sans-serif;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* 오른쪽 정렬 */
+  gap: 5px; /* 버튼 간격 조정 */
+}
+
+.edit-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #3498db;
+}
+
+.remove-to-do {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #e74c3c;
+}
+
+.save-button {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #2ecc71;
+  margin-left: 5px;
+  display: none;
+}
+
+.edit-input {
+  font-size: 16px;
+  margin-right: 5px;
+  display: none;
+}
+
+
+
+.checked {
+  color: #999 !important;
+  text-decoration: line-through;
+}
+
+.todo-item input {
+  margin: 0px 5px;
+}
+
+.empty {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: center;
+  color: #cccc;
+}
