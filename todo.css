@@ -1,5 +1,5 @@
 body {
-  background: #34495e;
+  background: #a8d8ea; /* 파스텔톤 하늘색 */
 }
 
 * {
@@ -9,7 +9,7 @@ body {
 }
 
 .main-section {
-  background: transparent;
+  background: #d9f3fc; /* 밝은 하늘색 배경 */
   max-width: 500px;
   width: 90%;
   height: 500px;
@@ -19,7 +19,7 @@ body {
 
 .add-section {
   width: 100%;
-  background: #fff;
+  background: #ffffff;
   margin: 0px auto;
   padding: 10px;
   border-radius: 5px;
@@ -30,58 +30,59 @@ body {
   width: 95%;
   height: 40px;
   margin: 10px auto;
-  border: 2px solid #ccc;
+  border: 2px solid #d0efff; /* 연한 하늘색 테두리 */
   font-size: 16px;
   border-radius: 5px;
   padding: 0px 5px;
+  background: #f7fcfe; /* 연한 배경색 */
 }
 
 .add-section button {
-  display: flex; /* 플렉스박스로 변경하여 내부 요소 정렬 */
-  align-items: center; /* 수직 가운데 정렬 */
-  justify-content: center; /* 수평 가운데 정렬 */
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 95%;
   height: 40px;
   margin: 0px auto;
   border: none;
   outline: none;
-  background: #0088FF;
-  color: #fff;
+  background: #6eb5d6; /* 파스텔 블루 */
+  color: #ffffff;
   font-family: sans-serif;
   font-size: 16px;
   border-radius: 5px;
   cursor: pointer;
-  gap: 10px; /* 텍스트와 아이콘 사이의 간격 */
+  gap: 10px;
 }
 
 .add-section button:hover {
-  box-shadow: 0 2px 2px 0 #ccc, 0 2px 3px 0 #ccc;
-  opacity: 0.7;
+  box-shadow: 0 2px 2px 0 #a3d9f4, 0 2px 3px 0 #a3d9f4;
+  opacity: 0.9;
 }
 
 .add-section button span {
-  border: 1px solid #fff;
+  border: 1px solid #ffffff;
   border-radius: 50%;
   display: inline-block;
   width: 18px;
   height: 18px;
-  line-height: 18px; /* 수직 가운데 정렬 */
-  text-align: center; /* 텍스트 가운데 정렬 */
+  line-height: 18px;
+  text-align: center;
 }
 
 #errorMes {
   display: block;
-  background: #f2dede;
+  background: #fbe4e4; /* 연한 핑크 경고 */
   width: 95%;
   margin: 0px auto;
-  color: rgb(139, 19, 19);
+  color: #c0392b;
   padding: 10px;
   height: 35px;
 }
 
 .show-todo-section {
   width: 100%;
-  background: #fff;
+  background: #ffffff;
   margin: 30px auto;
   padding: 10px;
   border-radius: 5px;
@@ -91,8 +92,9 @@ body {
   width: 95%;
   margin: 10px auto;
   padding: 20px 10px;
-  box-shadow: 0 4px 8px 0 #ccc, 0 6px 20px 0 #ccc;
+  box-shadow: 0 4px 8px 0 #d4edf7, 0 6px 20px 0 #d4edf7; /* 연한 하늘색 그림자 */
   border-radius: 5px;
+  background: #f9fcfd; /* 연한 배경색 */
 }
 
 .todo-item h2 {
@@ -116,8 +118,8 @@ body {
 .button-container {
   display: flex;
   align-items: center;
-  justify-content: flex-end; /* 오른쪽 정렬 */
-  gap: 5px; /* 버튼 간격 조정 */
+  justify-content: flex-end;
+  gap: 5px;
 }
 
 .edit-button {
@@ -125,7 +127,7 @@ body {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  color: #3498db;
+  color: #2980b9; /* 파란색 */
 }
 
 .remove-to-do {
@@ -133,7 +135,7 @@ body {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  color: #e74c3c;
+  color: #e74c3c; /* 빨간색 */
 }
 
 .save-button {
@@ -141,7 +143,7 @@ body {
   border: none;
   font-size: 20px;
   cursor: pointer;
-  color: #2ecc71;
+  color: #27ae60; /* 초록색 */
   margin-left: 5px;
   display: none;
 }
@@ -152,10 +154,8 @@ body {
   display: none;
 }
 
-
-
 .checked {
-  color: #999 !important;
+  color: #9ea7b1 !important;
   text-decoration: line-through;
 }
 
@@ -169,3 +169,44 @@ body {
   text-align: center;
   color: #cccc;
 }
+
+.logout-section {
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px;
+}
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #6eb5d6; /* 파스텔 블루 */
+  color: white;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  text-decoration: none; /* 링크 스타일 제거 */
+}
+
+.logout-button:hover {
+  background-color: #4aa2c4; /* 호버 시 더 진한 파스텔 블루 */
+  transform: translateY(-2px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.todo-image-container {
+  display: inline-block; /* 이미지와 텍스트가 나란히 표시되도록 설정 */
+  margin-left: 10px; /* 텍스트와 이미지 간격 */
+  vertical-align: middle; /* 텍스트와 수평 정렬 */
+}
+
+.todo-image {
+  width: 50px; /* 이미지의 너비 */
+  height: 50px; /* 이미지의 높이 */
+  border-radius: 5px; /* 이미지의 모서리를 둥글게 */
+  object-fit: cover; /* 이미지 비율 유지하면서 크기 조정 */
+  border: 1px solid #ddd; /* 테두리 추가 */
+}
+
